@@ -1,24 +1,566 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7q6-fA-xZu">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--車商-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="車商" id="BYZ-38-t0r" customClass="ViewController" customModule="hw1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TdD-4p-Tfq">
+                                <rect key="frame" x="110" y="587" width="155" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="65"/>
+                                <state key="normal" title="其他"/>
+                                <connections>
+                                    <segue destination="Ba9-Lr-JPG" kind="show" id="8hk-nu-1dI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPU-hE-6ul">
+                                <rect key="frame" x="110" y="371" width="155" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="65"/>
+                                <state key="normal" title="日系"/>
+                                <connections>
+                                    <segue destination="iil-Zw-Jvi" kind="show" id="bai-di-P5Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1YP-WM-Dlv">
+                                <rect key="frame" x="71" y="176" width="233" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="65"/>
+                                <state key="normal" title="歐系"/>
+                                <connections>
+                                    <segue destination="oMD-wy-kcc" kind="show" id="pbe-gK-nea"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="車商產地" id="Q45-SP-4CJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-964" y="-751.47783251231533"/>
+        </scene>
+        <!--歐系-->
+        <scene sceneID="xSN-Jd-RGy">
+            <objects>
+                <viewController title="歐系" id="oMD-wy-kcc" customClass="ViewController" customModule="hw1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gsw-Xw-5FK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qzj-L8-ysz">
+                                <rect key="frame" x="110" y="95" width="155" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ah-ug-CiB">
+                                <rect key="frame" x="117" y="214" width="140" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="benz"/>
+                                <connections>
+                                    <segue destination="qUI-0I-B7G" kind="show" id="Xel-R6-Tgs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6E-tl-pQU">
+                                <rect key="frame" x="122" y="440" width="143" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Audi"/>
+                                <connections>
+                                    <segue destination="w7h-uq-zov" kind="show" id="ofd-8d-Z1Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66C-3J-DhO">
+                                <rect key="frame" x="130" y="561" width="130" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bmw"/>
+                                <connections>
+                                    <segue destination="isr-qr-Vm1" kind="show" id="fFn-8K-kZv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6WG-22-jRi">
+                                <rect key="frame" x="130" y="676" width="135" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="skoda-logo"/>
+                                <connections>
+                                    <segue destination="bKR-lS-y6f" kind="show" id="vZw-KL-SYl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udt-1M-aQE">
+                                <rect key="frame" x="125" y="337" width="130" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="volvo"/>
+                                <connections>
+                                    <segue destination="N9I-db-PhS" kind="show" id="bgC-I1-2Xo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vx-1G-Bro">
+                                <rect key="frame" x="117" y="95" width="138" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="福斯"/>
+                                <connections>
+                                    <segue destination="o0P-8l-JX4" kind="show" id="SMO-Pa-pGr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="oyE-dv-2S1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xpj-67-X72" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.799999999999997" y="-1519.2118226600985"/>
+        </scene>
+        <!--Volkswagen-->
+        <scene sceneID="Ozq-Mz-OfR">
+            <objects>
+                <viewController title="Volkswagen" id="o0P-8l-JX4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rGV-te-IYc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="福斯" translatesAutoresizingMaskIntoConstraints="NO" id="ONn-jb-xCJ">
+                                <rect key="frame" x="0.0" y="88" width="375" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sqr-J4-rj7">
+                                <rect key="frame" x="0.0" y="315" width="375" height="290"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Volkswagen Group（福斯集團，或作大眾集團、福士集團）是世界最大的三家汽車製造商之一，總部位於德國狼堡。公司成立於1937年，最早是由納粹德國政府出資的國有企業，以出產金龜車而聞名。在二戰結束後，英軍接管了公司的汽車工廠，並在戰後的艱難歲月裏繼續出產金龜車。1949年英國政府將福斯公司交還給德國聯邦政府與地方邦政府，合資為國營企業。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="QcT-Eb-b0c"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4st-WT-omy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1985" y="-2175"/>
+        </scene>
+        <!--Benz-->
+        <scene sceneID="bBZ-Gg-tOT">
+            <objects>
+                <viewController title="Benz" id="qUI-0I-B7G" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="198-P9-wni">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="benz" translatesAutoresizingMaskIntoConstraints="NO" id="KRV-Hk-FC8">
+                                <rect key="frame" x="0.0" y="88" width="375" height="201"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFj-M8-lvP">
+                                <rect key="frame" x="0.0" y="405" width="375" height="290"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">梅賽德斯-賓士（德語：Mercedes-Benz，根據地區與時期的不同分別有賓士、奔馳、平治、梅賽德斯、朋馳等多種中文簡稱），是一家以豪華和高性能著稱的德國汽車品牌[1]，總部設於德國斯圖加特。旗下產品有各式乘用車、中大型商用車輛。目前梅賽德斯-賓士是戴姆勒公司旗下的成員之一。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="6w1-4L-7Lj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="myb-HA-K3j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1984.8" y="-2940.1477832512314"/>
+        </scene>
+        <!--日系-->
+        <scene sceneID="Jjx-UO-kAX">
+            <objects>
+                <viewController title="日系" id="iil-Zw-Jvi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ijk-Zv-85q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39i-qi-lib">
+                                <rect key="frame" x="86" y="515" width="203" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="honda-logo"/>
+                                <connections>
+                                    <segue destination="bAA-gw-9wU" kind="show" id="Hh5-bs-980"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBk-Qb-32F">
+                                <rect key="frame" x="66" y="278" width="242" height="201"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nissan_brand_logo"/>
+                                <connections>
+                                    <segue destination="kVp-Jt-7d6" kind="show" id="LNG-9m-esV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhf-y0-BNd">
+                                <rect key="frame" x="86" y="99" width="203" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Toyota-Logo"/>
+                                <connections>
+                                    <segue destination="6VA-aN-3Ef" kind="show" id="NJ7-dL-EXG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="RL0-OC-wCO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MGV-q4-ngk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58.399999999999999" y="-752.21674876847294"/>
+        </scene>
+        <!--其他-->
+        <scene sceneID="0ZP-vG-I9t">
+            <objects>
+                <viewController title="其他" id="Ba9-Lr-JPG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HUD-wn-w78">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9b0-fL-eUk">
+                                <rect key="frame" x="83" y="427" width="208" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Luxgen Logo"/>
+                                <connections>
+                                    <segue destination="hDt-08-scH" kind="show" id="s4v-0I-Tet"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTN-Ld-67g">
+                                <rect key="frame" x="83" y="119" width="208" height="182"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="hyundai"/>
+                                <connections>
+                                    <segue destination="xfk-Dn-gQe" kind="show" id="nuy-8Z-EnP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="I6Z-MP-U4P"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="olM-FD-WLc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-284" y="815.76354679802955"/>
+        </scene>
+        <!--volvo-->
+        <scene sceneID="82f-fH-RWl">
+            <objects>
+                <viewController title="volvo" id="N9I-db-PhS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5vk-kL-eKy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="volvo" translatesAutoresizingMaskIntoConstraints="NO" id="NBk-in-pNe">
+                                <rect key="frame" x="0.0" y="88" width="375" height="327"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODt-zR-rbz">
+                                <rect key="frame" x="0.0" y="423" width="375" height="290"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">富豪汽車（中國大陸譯名：沃爾沃汽車，瑞典文：富豪 Personvagnar）是於1927年在瑞典歌德堡成立的汽車品牌，富豪為拉丁文，意思為「滾動」，是北歐地區第一個汽車品牌，原為美國福特汽車旗下所擁有的品牌，於2010年3月28日由中國吉利汽車收購其全部股權及其相關資產（包括智慧財產權），使其成為旗下品牌。富豪汽車以車輛安全表現優秀而聞名。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="JKT-PE-o5g"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HeI-YQ-hl2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001" y="-2940"/>
+        </scene>
+        <!--audi-->
+        <scene sceneID="Oya-02-1qj">
+            <objects>
+                <viewController title="audi" id="w7h-uq-zov" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hVv-bH-tNY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vtp-Ti-ADM">
+                                <rect key="frame" x="0.0" y="361" width="375" height="398"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">奧迪集團是一間德國的汽車公司，是大眾集團的全資獨立子集團。奧迪汽車主要從事汽車製造業，其產品線非常豐富，從摩托車、小型車至運動型多用途車均有涉足，它的產品在華主要針對豪華型汽車市場，在歐美則是科技與外型個性導向。
+奧迪集團的總部設在德國城市因戈爾施塔特 (Ingolstadt)，在德國的因戈爾施塔特、內卡蘇姆，匈牙利的傑爾，比利時的布魯塞爾，斯洛伐克的布拉迪斯拉發，巴西的聖若澤杜斯皮尼艾斯，中國大陸的長春和印度的奧郎加巴德都設有生產廠或合資生產廠，在台灣由台灣奧迪負責引進車輛供其台灣經銷商授權銷售及維修奧迪全車系，全台的展示中心和保養廠有10間。
+奧迪汽車早於1966年便成為了福斯集團的全資子公司。福斯集團於1965年從戴姆勒-賓士集團手中買斷了當時還是奧迪前身的汽車聯盟公司的所有權。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Audi" translatesAutoresizingMaskIntoConstraints="NO" id="53p-j6-l9w">
+                                <rect key="frame" x="0.0" y="48" width="375" height="327"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="aLx-u6-sE8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vkk-nB-WmU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000.8" y="-2175.3694581280788"/>
+        </scene>
+        <!--BMW-->
+        <scene sceneID="FAF-Sd-FoR">
+            <objects>
+                <viewController title="BMW" id="isr-qr-Vm1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UBI-vb-rO2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="I2f-PZ-m0V">
+                                <rect key="frame" x="0.0" y="479" width="375" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">巴伐利亞發動機製造廠股份有限公司（德語：Bayerische Motoren Werke AG，英語：Bavarian Motor Works，在中國大陸及港澳地區稱為寶馬，在台灣一般使用原稱「BMW」，偶稱「寶馬」）是德國一家跨國豪華汽車、機車和引擎製造商，總部位於德國巴伐利亞州的慕尼黑。BMW經常被暱稱為Bimmer。
+BMW集團除了以「BMW」作為品牌商標銷售各式汽車與機車外，也收購過多家外國汽車公司。目前BMW集團是BMW、MINI、Rolls-Royce三個品牌的擁有者。2012年BMW集團全品牌共生產1,845,186汽車和117,109機車。BMW經常與奧迪、賓士一同並列為德國三大豪華汽車製造商。[4][5]它的標誌也是由大自然三大元素的概念製成的。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bmw" translatesAutoresizingMaskIntoConstraints="NO" id="rvp-2x-wIk">
+                                <rect key="frame" x="0.0" y="118" width="375" height="327"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="JZA-HK-Ttm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5td-OR-Qmi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000.8" y="-1497.0443349753696"/>
+        </scene>
+        <!--skoda-->
+        <scene sceneID="xDf-8V-tsb">
+            <objects>
+                <viewController title="skoda" id="bKR-lS-y6f" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zyy-IT-NxE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="skoda-logo" translatesAutoresizingMaskIntoConstraints="NO" id="yLF-K6-h19">
+                                <rect key="frame" x="0.0" y="88" width="375" height="327"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yzh-uI-oDT">
+                                <rect key="frame" x="0.0" y="393" width="375" height="318"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Škoda（捷克語：Škoda Auto）是一家總部位於捷克共和國的汽車製造商。創立於1895年。
+1991年後斯柯達公司逐漸由國家公有化走向財團私有化，並在2000年成為德國福斯集團（VW）旗下的品牌[1][2]。
+2012年其全球銷量達到939,200輛。[3]
+Škoda在捷克共和國擁有三個汽車生產廠，並在中國、俄羅斯、斯洛伐克和印度與福斯汽車集團在當地的合作夥伴共同生產汽車，在烏克蘭和哈薩克斯坦與當地夥伴合作生產Škoda汽車。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="pYe-rK-Mzp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zSZ-CO-PQy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1986" y="-1497"/>
+        </scene>
+        <!--toyota-->
+        <scene sceneID="FKM-pE-HuD">
+            <objects>
+                <viewController title="toyota" id="6VA-aN-3Ef" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fob-Ce-Zu5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Toyota-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="JTY-dU-b6k">
+                                <rect key="frame" x="0.0" y="88" width="375" height="327"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KC6-GR-yDx">
+                                <rect key="frame" x="0.0" y="423" width="375" height="318"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">豐田汽車公司（日文：トヨタ自動車株式会社，英文：Toyota Motor Corporation）簡稱豐田，是一家總部設在日本愛知縣豐田市和東京都文京區的汽車工業製造公司。現時爲世界銷量排名第一的汽車製造商，利潤也堪稱行業典範。 [2]；名列美國《財富》雜誌2017年全球五百大企業排行榜的第5位。
+豐田2012年共售973萬輛車，2013年度共售1013.3萬輛汽車，2014年共售1023萬輛汽車，是第一個達到年產量千萬台以上的車廠。而豐田亦是雷克薩斯、大發及日野品牌的母公司。
+豐田在日本稱「トヨタ」，英文爲「TOYOTA」，簡寫爲「TMC」。現任社長是豐田章男。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="lRe-ap-n5g"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oOq-Ks-v3u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1343.2" y="-752.21674876847294"/>
+        </scene>
+        <!--nissan-->
+        <scene sceneID="EXD-Zp-54j">
+            <objects>
+                <viewController title="nissan" id="kVp-Jt-7d6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sty-7w-Pow">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nissan_brand_logo" translatesAutoresizingMaskIntoConstraints="NO" id="WSd-CT-CKF">
+                                <rect key="frame" x="0.0" y="88" width="375" height="327"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ptn-fg-ifh">
+                                <rect key="frame" x="0.0" y="423" width="375" height="318"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">日產汽車（日語：日産自動車／にっさんじどうしゃ Nissan jidōsha */?，英語：Nissan Motor；簡稱日產，漢語又譯尼桑）是源自日本的跨國汽車製造商，總部位於橫濱港未來開發區，旗下擁有「日產」（NISSAN）、「英菲尼迪」（INFINITI；主要在日本以外銷售）、「達特桑」（DATSUN；1932年至1983年期間使用，2012年在海外重啟）等多個品牌；為日本第二大汽車製造商，年產量僅次於豐田汽車[5]，也是世界第六大汽車製造商[6]。法國車商雷諾自1999年起成為其母公司後，兩家公司在日本政府的干預下組成企業聯盟，合併產量位居世界第四[7]。2016年，日產在三菱汽車爆發造假醜聞[8]後，收購三菱汽車34%股權，將其納入日產與雷諾的企業聯盟，雷諾成為兩家公司的實質控制者。
+日產汽車在2017年由NHK報導，該公司爆發不當的品質檢查已經進行了至少20年，後由日本經濟新聞報導日本國土交通省對日產進行檢查，該公司在10月19日才宣布，將暫停日本國內的汽車生產至少兩個星期，來解決品質檢查不當的問題。自從爆發醜聞以來，日產在過去三年來已經回收120萬輛日產汽車，估計這次事件將讓日產損失大約900萬美元。[9][10]
+日產汽車也是世界著名的汽車發動機製造商之一，VQ系列發動機在1995年至2008年間，已連續14年入選沃德十大最佳汽車引擎[11]。另外，日產的無極變速器亦是世界知名。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="J0m-nX-H4n"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sqf-Mo-TYC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2327.1999999999998" y="-751.47783251231533"/>
+        </scene>
+        <!--honda-->
+        <scene sceneID="2Bj-je-R54">
+            <objects>
+                <viewController title="honda" id="bAA-gw-9wU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SJy-NC-6Zp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="REO-Y0-1Gy">
+                                <rect key="frame" x="0.0" y="429" width="375" height="318"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">本田技研工業（日語：本田技研工業／ほんだぎけんこうぎょう Honda giken kōgyō */?；英語：Honda Motor Co., Ltd.；東證1部：7267, NYSE：HMC），簡稱本田或HONDA，是日本一家跨國交通載具及機械製造公司，主要聞名於其汽車、摩托車、引擎、飛機及電力設備生產業務。
+自1959年以來，本田一直是世界上最大的摩托車製造商[1][2]，以及世界上最大的內燃機製造商，每年生產超過1400萬台內燃機[3]。本田於2001年成為日本第二大汽車製造商[4][5]。在2016年，本田是世界第五大汽車製造商。 在1986年，本田發布了Acura品牌，並成為日本第一個發布旗下專有豪華品牌的汽車製造商。除了汽車和摩托車核心業務，本田還生產花園設備、船舶發動機、個人船舶和發電機及其他產品。自1986年以來，本田參與了人工智慧/機器人研究，並在2000年發布ASIMO機器人。此外，它們還冒險進入航空航天領域，於2004年建立GE本田航空發動機和本田HA-420本田噴氣機，並於2012年開始生產。本田在中國有三家合資企業（本田中國、東風本田和廣汽本田）。
+2013年，本田在研發上的投資約5.7％（68億美元）[6]。在2013年，本田成為第一個成為美國淨出口商的日本汽車製造商，出口108,705輛本田和Acura車型，而只進口了88,357輛。[</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="honda-logo" translatesAutoresizingMaskIntoConstraints="NO" id="xBZ-U8-hVU">
+                                <rect key="frame" x="0.0" y="88" width="375" height="327"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="FYh-j4-ydJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IT4-Vm-vNd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001" y="-7"/>
+        </scene>
+        <!--hyundai-->
+        <scene sceneID="tKB-ZC-ehF">
+            <objects>
+                <viewController title="hyundai" id="xfk-Dn-gQe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kmf-gg-zIQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hyundai" translatesAutoresizingMaskIntoConstraints="NO" id="WTr-k5-0xb">
+                                <rect key="frame" x="0.0" y="88" width="375" height="219"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NcO-zh-Q3p">
+                                <rect key="frame" x="0.0" y="359" width="375" height="318"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">現代汽車株式會社（韓語：현대자동차 주식회사／現代自動車株式會社，KSE：005380）是韓國一家跨國經營的汽車廠商，財富世界500強企業，也是2009年韓國最大及世界排名第四的汽車製造商。現代汽車在韓國東南沿海的蔚山廣域市擁有世界上最大的綜合性汽車製造廠，並接收許多軍方合約，例如K1主戰坦克就是現代集團的軍事代表作。
+現代汽車亦為世界盃足球賽和歐洲冠軍聯賽的贊助商，其旗下子公司起亞汽車也多方贊助和經營體育活動，例如起亞汽車為澳洲網球公開賽和歐洲杯的主要贊助商，也在韓國職棒擁有起亞虎球隊。
+現代汽車集團在中國很注重社會公益，其「內蒙古鹽鹼干湖盆治理」項目是中國十大環境公益活動之一，被評為「2014年中國50強公益品牌」。2015年2月4日，在中國社會科學院企業社會責任研究中心發布的「第一屆中國社會貢獻指數」中，現代汽車集團在中國所有汽車類企業中排名居首，在外資企業中排名第七位，在全部300家參選企業中排名第17位</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="P6d-F9-iVS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4UZ-2X-joF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="936.79999999999995" y="815.76354679802955"/>
+        </scene>
+        <!--hyundai-->
+        <scene sceneID="S7B-aO-D1a">
+            <objects>
+                <viewController title="hyundai" id="hDt-08-scH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cOR-YN-TPu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Doj-JT-1Wm">
+                                <rect key="frame" x="0.0" y="387" width="375" height="318"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">納智捷汽車股份有限公司是一間台灣自主研發的汽車公司（英語：Luxgen Motor Co., Ltd.），簡稱納智捷汽車或納智捷，為裕隆汽車於2008年5月轉投資成立的全資子公司，亦為裕隆汽車於臺灣時間2009年1月6日下午正式發表的自有品牌。公司的口號是「預先設想，超越期待」（英語："Think Ahead"）。
+納智捷部分車型自2010年年底由東風裕隆在中國杭州生產。 納智捷產品主要由另一家裕隆子公司華創車電開發</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Luxgen Logo" translatesAutoresizingMaskIntoConstraints="NO" id="h1I-Bi-BRl">
+                                <rect key="frame" x="0.0" y="88" width="375" height="219"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="EKQ-MP-KvH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RyO-ex-fPw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1894" y="816"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zvT-up-0eq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7q6-fA-xZu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CDD-kq-Lcl">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XtQ-pa-ZmN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kMo-id-HXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2063" y="-751"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Audi" width="379" height="302"/>
+        <image name="Luxgen Logo" width="220" height="143"/>
+        <image name="Toyota-Logo" width="524" height="458"/>
+        <image name="benz" width="451" height="236"/>
+        <image name="bmw" width="126" height="126"/>
+        <image name="honda-logo" width="341" height="256"/>
+        <image name="hyundai" width="266" height="166"/>
+        <image name="nissan_brand_logo" width="170" height="144"/>
+        <image name="skoda-logo" width="166" height="166"/>
+        <image name="volvo" width="126" height="118"/>
+        <image name="福斯" width="85" height="63"/>
+    </resources>
 </document>
